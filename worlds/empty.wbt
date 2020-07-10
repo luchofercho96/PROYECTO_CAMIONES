@@ -1,0 +1,230 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.24881787841683597 0.667037336673854 0.7022470041681886 3.59709686193066
+  position -8.302148442291934 24.804403514074558 -15.624150666356611
+}
+Solid {
+  translation -10.34 0.72 -12.97
+  rotation 0 1 0 -0.261795307179586
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 0
+        }
+      }
+      geometry Box {
+        size 0.9 1 0.9
+      }
+    }
+  ]
+  name "solid(3)"
+}
+TexturedBackground {
+  skyColor [
+    0.333333 0 1
+  ]
+}
+TexturedBackgroundLight {
+  texture "noon_park_empty"
+  luminosity 0.7
+}
+RectangleArena {
+  floorSize 40 40
+  floorTileSize 80 80
+  wallThickness 0.24
+  wallHeight 1
+}
+Solid {
+  translation -9.53 0.13 -15.32
+  rotation 0 1 0 3.14159
+  children [
+    Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "D:/WETBOT_PROYECTOS/VISION_PROYECTO/CAMIONES_MARKADORES/3.jpg"
+          ]
+        }
+      }
+      geometry Box {
+        size 1 0.01 1
+      }
+    }
+  ]
+}
+ControlledStreetLight {
+  translation 9.78775 0 -5.96223
+  rotation 0 1 0 0.785403
+  name "street light(2)"
+  supervisor TRUE
+  beamWidth 0
+  color [
+    0.772549 0.909804 1
+  ]
+}
+Solid {
+  translation -13.1973 0.05 -9.946
+  rotation 0 1 0 -1.5707953071795862
+  children [
+    Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "D:/WETBOT_PROYECTOS/VISION_PROYECTO/CAMIONES_MARKADORES/aruco_1.jpg"
+          ]
+        }
+      }
+      geometry Box {
+        size 1 0.01 1
+      }
+    }
+  ]
+  name "solid(1)"
+}
+Solid {
+  translation -3.46 0.01 -16.11
+  children [
+    Solid {
+      translation 0.14 0 -0.15
+    }
+    Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "C:/Users/lfrec/Desktop/CAMIONES_MARKADORES/chest.jpg"
+          ]
+        }
+      }
+      geometry Box {
+        size 1.3 0.01 1.5
+      }
+    }
+  ]
+  name "solid(2)"
+}
+FastFoodRestaurant {
+  translation -10.1 0 6.76
+  rotation 0 1 0 1.5708
+}
+ControlledStreetLight {
+  translation -19 0 -19
+  rotation 0 1 0 -2.3562003061004253
+  supervisor TRUE
+  beamWidth 0
+  color [
+    0.772549 0.909804 1
+  ]
+}
+Robot {
+  translation -16.51 7.49 -16.5
+  children [
+    Camera {
+      translation 23.6726 -0.328699 7.98259
+      rotation 0.5299039549088846 -0.8191609302951419 -0.21949298132268452 -0.9363253071795858
+      children [
+        Shape {
+          appearance PBRAppearance {
+          }
+          geometry Box {
+            size 0.3 0.3 0.3
+          }
+        }
+      ]
+      name "camera(1)"
+      fieldOfView 1.7
+      width 800
+      height 500
+    }
+    Camera {
+      translation 0.2 0 -0.2
+      rotation 0.15655698742510843 0.9124869267076843 0.3779649696412879 -2.418865307179586
+      children [
+        Solid {
+          rotation -0.6785967877234219 0.2810849120718748 0.6785997877224834 1.09605
+          children [
+            Solid {
+              translation 4.03 4 -7.4
+              children [
+                Solid {
+                  translation 7.09 2.14 4.16373
+                  rotation -1 -9.58979e-09 9.5898e-09 -1.5707953071795862
+                  children [
+                    TruckSimple {
+                      translation 0 -3.66162 -5.74436
+                      rotation -1 0 0 8.98519e-06
+                    }
+                    Shape {
+                      appearance Appearance {
+                        texture ImageTexture {
+                          url [
+                            "D:/WETBOT_PROYECTOS/VISION_PROYECTO/CAMIONES_MARKADORES/aruco_2.jpg"
+                          ]
+                        }
+                      }
+                      geometry Box {
+                        size 1 0.01 1
+                      }
+                    }
+                  ]
+                  name "solid(3)"
+                }
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 0 0 0
+                  }
+                  geometry Box {
+                    size 0.2 0.2 0.2
+                  }
+                }
+              ]
+            }
+          ]
+          name "solid(1)"
+        }
+        Solid {
+          translation -1.09786 -2.87647 -7.62647
+          rotation -0.6786010574700474 0.6785950574695392 0.2810860238048953 -1.096065307179586
+          children [
+            Shape {
+              appearance Appearance {
+                texture ImageTexture {
+                  url [
+                    "C:/Users/lfrec/Desktop/CAMIONES_MARKADORES/aruco_o.jpg"
+                  ]
+                }
+              }
+              geometry Box {
+                size 1 0.01 1
+              }
+            }
+          ]
+        }
+        Shape {
+          appearance PBRAppearance {
+          }
+          geometry Box {
+            size 0.3 0.3 0.3
+          }
+        }
+      ]
+      fieldOfView 1.7
+      width 800
+      height 500
+    }
+  ]
+  controller "SOLUCION_2"
+}
+WoodenPalletStack {
+  translation -14.83 0 0.18
+  rotation 0 1 0 -1.5707953071795862
+}
+StraightRoadSegment {
+  translation -2 0.1 -12.6
+  rotation 0 1 0 -1.5707996938995747
+  width 3
+  startingRoadBorderWidth 0.1
+  endingRoadBorderWidth 0.1
+}

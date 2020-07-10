@@ -1,0 +1,11 @@
+Webots Proto Cache File version 1.4
+protoFileHash: d326742d898cfa46cfb115c5f2a8ea54
+containsDevices: 0
+baseType: Solid
+slotType: 
+parameters: translation,rotation,name,enablePhysics
+tags: static
+license:  Creative Commons Attribution 4.0 International License.
+licenseUrl:  https://creativecommons.org/licenses/by/4.0/legalcode
+documentationUrl: https://cyberbotics.com/doc/guide/object-traffic
+info: A\swork\sbarrier\swith\soptional\sphysics.\n

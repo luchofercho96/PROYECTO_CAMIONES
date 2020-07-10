@@ -1,0 +1,11 @@
+Webots Proto Cache File version 1.4
+protoFileHash: b8b13ef58f54eac193bca5c64d421ea9
+containsDevices: 0
+baseType: Transform
+slotType: 
+parameters: translation,rotation,numberOfCarParks,carParkLength,carParkWidth,texture
+tags: static
+license:  Copyright Cyberbotics Ltd. Licensed for use only with Webots.
+licenseUrl:  https://cyberbotics.com/webots_assets_license
+documentationUrl: https://cyberbotics.com/doc/guide/object-traffic
+info: Parking\slines\sfor\sseveral\sconsecutive\scars.\n
